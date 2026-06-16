@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Bites — Fine Casual Dining</title>
+
+  <!-- Google Fonts: Playfair Display + Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       SECTION 1: NAVBAR
+  ============================== -->
+  <header class="navbar" id="home">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"></span>
+        <span class="logo-text">Urban Bites</span>
+      </a>
+
+      <!-- Hamburger toggle (CSS-only via checkbox) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- Nav Links -->
+      <nav class="nav-links">
+        <a href="#home"    class="nav-link">Home</a>
+        <a href="#menu"    class="nav-link">Menu</a>
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#menu"    class="btn btn-nav">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================
+       SECTION 2: HERO
+  ============================== -->
+  <section class="hero">
+    <!-- Decorative background circles -->
+    <div class="hero-blob hero-blob--1"></div>
+    <div class="hero-blob hero-blob--2"></div>
+
+    <div class="hero-content">
+      <!-- Eyebrow label -->
+      <p class="hero-eyebrow">✦ Est. 2017 · Delhi, India</p>
+
+      <!-- Restaurant name -->
+      <h1 class="hero-title">
+        Where Every Flame <br />
+        <span class="hero-title--accent">Tells a Story</span>
+      </h1>
+
+      <!-- Tagline -->
+      <p class="hero-tagline">𝑩𝒐𝒍𝒅 𝒔𝒑𝒊𝒄𝒆𝒔, 𝑶𝒑𝒆𝒏 𝒇𝒊𝒓𝒆, 𝑼𝒏𝒇𝒐𝒓𝒈𝒆𝒕𝒕𝒂𝒃𝒍𝒆 𝒑𝒍𝒂𝒕𝒆𝒔..</p>
+
+      <!-- Short description -->
+      <p class="hero-desc">
+        𝑨𝒕 𝑼𝒓𝒃𝒂𝒏 𝑩𝒊𝒕𝒆𝒔, 𝑩𝒆𝒉𝒊𝒏𝒅 𝒆𝒗𝒆𝒓𝒚 𝒔𝒑𝒂𝒓𝒌 𝒍𝒊𝒆𝒔 𝒂 𝒇𝒍𝒂𝒗𝒐𝒓 𝒘𝒂𝒊𝒕𝒊𝒏𝒈 𝒕𝒐 𝒃𝒆 𝒅𝒊𝒔𝒄𝒐𝒗𝒆𝒓𝒆𝒅.
+         𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒆 𝒘𝒐𝒐𝒅-𝒇𝒊𝒓𝒆𝒅 𝒄𝒓𝒆𝒂𝒕𝒊𝒐𝒏𝒔, 𝒉𝒂𝒏𝒅𝒄𝒓𝒂𝒇𝒕𝒆𝒅 𝒓𝒆𝒄𝒊𝒑𝒆𝒔,
+          𝒂𝒏𝒅 𝒎𝒐𝒎𝒆𝒏𝒕𝒔 𝒕𝒉𝒂𝒕 𝒍𝒊𝒏𝒈𝒆𝒓 𝒍𝒐𝒏𝒈 𝒂𝒇𝒕𝒆𝒓 𝒕𝒉𝒆 𝒍𝒂𝒔𝒕 𝒃𝒊𝒕𝒆
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Order Now</a>
+        <a href="#menu" class="btn btn-outline">View Menu</a>
+      </div>
+    </div>
+
+    <!-- Hero image panel -->
+    <div class="hero-image-wrap">
+      <img
+        src="https://img.magnific.com/free-photo/mix-pizza-with-tomato-slices-mushroom-olive_140725-185.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Beautifully plated dish at Urban Bites"
+        class="hero-image"
+      />
+      <!-- Floating badge -->
+      <div class="hero-badge">
+        <span class="hero-badge__num">4.9</span>
+        <span class="hero-badge__stars">★★★★★</span>
+        <span class="hero-badge__label">1000+ Reviews</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 3: ABOUT (anchor)
+  ============================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2019-12/PORT_MUZIRIS31.jpg"about-img about-img--main" />
+          <img src="https://i.pinimg.com/736x/2b/30/d3/2b30d3d02ab314d062622d1aa1747790.jpg" alt="Chef plating a dish" class="about-img about-img--accent" />
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Passion Plated. <br/>Fire Perfected.</h2>
+          <p>𝑭𝒐𝒖𝒏𝒅𝒆𝒅 𝒃𝒚 𝒄𝒉𝒆𝒇 𝒅𝒖𝒐 𝑨𝒏𝒊𝒌𝒂 𝑺𝒉𝒂𝒓𝒎𝒂 𝒂𝒏𝒅 𝑹𝒐𝒉𝒂𝒏 𝑴𝒆𝒉𝒕𝒂, 𝑼𝒓𝒃𝒂𝒏 𝑩𝒊𝒕𝒆𝒔 𝒘𝒂𝒔 𝒃𝒐𝒓𝒏 𝒇𝒓𝒐𝒎 𝒂 𝒔𝒉𝒂𝒓𝒆𝒅 𝒐𝒃𝒔𝒆𝒔𝒔𝒊𝒐𝒏 𝒘𝒊𝒕𝒉 𝒍𝒊𝒗𝒆-𝒇𝒊𝒓𝒆 𝒄𝒐𝒐𝒌𝒊𝒏𝒈 𝒂𝒏𝒅 𝒕𝒉𝒆 𝒃𝒐𝒍𝒅 𝒇𝒍𝒂𝒗𝒐𝒖𝒓𝒔 𝒐𝒇 𝑺𝒐𝒖𝒕𝒉 𝑨𝒔𝒊𝒂𝒏 𝒔𝒕𝒓𝒆𝒆𝒕 𝒇𝒐𝒐𝒅 — 𝒓𝒆𝒊𝒎𝒂𝒈𝒊𝒏𝒆𝒅 𝒊𝒏 𝒂 𝒎𝒐𝒅𝒆𝒓𝒏, 𝒓𝒆𝒍𝒂𝒙𝒆𝒅 𝒅𝒊𝒏𝒊𝒏𝒈 𝒔𝒑𝒂𝒄𝒆.
+</p>
+          <p>𝑬𝒗𝒆𝒓𝒚 𝒓𝒆𝒄𝒊𝒑𝒆 𝒊𝒔 𝒂 𝒄𝒐𝒍𝒍𝒂𝒃𝒐𝒓𝒂𝒕𝒊𝒐𝒏 𝒃𝒆𝒕𝒘𝒆𝒆𝒏 𝒐𝒍𝒅 𝒇𝒂𝒎𝒊𝒍𝒚 𝒏𝒐𝒕𝒆𝒔 𝒂𝒏𝒅 𝒏𝒆𝒘 𝒄𝒖𝒍𝒊𝒏𝒂𝒓𝒚 𝒕𝒆𝒄𝒉𝒏𝒊𝒒𝒖𝒆. 𝑾𝒆 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒖𝒓 𝒑𝒓𝒐𝒅𝒖𝒄𝒆 𝒇𝒓𝒐𝒎 𝒘𝒊𝒕𝒉𝒊𝒏 100 𝒌𝒎 𝒘𝒉𝒆𝒏𝒆𝒗𝒆𝒓 𝒑𝒐𝒔𝒔𝒊𝒃𝒍𝒆, 𝒂𝒏𝒅 𝒐𝒖𝒓 𝒄𝒉𝒂𝒓𝒄𝒐𝒂𝒍 𝒄𝒐𝒎𝒆𝒔 𝒇𝒓𝒐𝒎 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒊𝒃𝒍𝒚 𝒎𝒂𝒏𝒂𝒈𝒆𝒅 𝒇𝒐𝒓𝒆𝒔𝒕𝒔 🌿.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat__num">12+</span><span class="stat__label">Years of Craft</span></div>
+            <div class="stat"><span class="stat__num">48</span><span class="stat__label">Menu Items</span></div>
+            <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Local Produce</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 4: SEARCH & FILTER
+  ============================== -->
+  <section class="search-filter" id="menu">
+    <div class="container">
+      <p class="section-eyebrow">Explore</p>
+      <h2 class="section-title">Our Full Menu</h2>
+
+      <!-- Static search bar (visual only) -->
+      <div class="search-bar">
+        <i class="fa fa-search search-icon"></i>
+        <input type="text" placeholder="Search dishes, flavours…" class="search-input" readonly />
+        <button class="btn btn-search">Search</button>
+      </div>
+
+      <!-- Static category filters -->
+      <div class="filter-tabs">
+        <button class="filter-tab filter-tab--active">All</button>
+        <button class="filter-tab"> Pizza</button>
+        <button class="filter-tab"> Burgers</button>
+        <button class="filter-tab"> Pasta</button>
+        <button class="filter-tab"> Desserts</button>
+        <button class="filter-tab"> Drinks</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 5: MENU CARDS
+  ============================== -->
+  <section class="menu-section">
+    <div class="container">
+
+      <!-- ── PIZZA ── -->
+      <h3 class="menu-category-title"> Pizza</h3>
+      <div class="menu-grid">
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Margherita pizza" class="food-card__img" />
+            <span class="food-card__badge">Best Seller</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Margherita Classic</h4>
+            <p class="food-card__desc">Wood-fired base, San Marzano tomatoes, mozzarella, fresh basil.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹499</span>
+              <span class="food-card__rating">★★★★★ <em>4.9</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Spicy Pepperoni pizza" class="food-card__img" />
+            <span class="food-card__badge food-card__badge--spicy">Spicy</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Diablo Pepperoni</h4>
+            <p class="food-card__desc">Double pepperoni, ghost-chilli honey drizzle, smoked provolone.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹649</span>
+              <span class="food-card__rating">★★★★★ <em>4.7</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://cdn.uengage.io/uploads/59252/image-487216-1744185271.jpeg" alt="BBQ Chicken pizza" class="food-card__img" />
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Veg Mexican</h4>
+            <p class="food-card__desc">Seasoned refried beans, zesty salsa, and crunchy vegetables.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹729</span>
+              <span class="food-card__rating">★★★★☆ <em>4.7</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid pizza -->
+
+      <!-- ── BURGERS ── -->
+      <h3 class="menu-category-title"> Burgers</h3>
+      <div class="menu-grid">
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Classic Smash Burger" class="food-card__img" />
+            <span class="food-card__badge">Chef's Pick</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Classic Smash Burger</h4>
+            <p class="food-card__desc">Double smash patty, American cheese, ember sauce, shredded lettuce, brioche bun.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹249</span>
+              <span class="food-card__rating">★★★★★ <em>4.9</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&q=80" alt="Mushroom Swiss Burger" class="food-card__img" />
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Truffle Mushroom Swiss</h4>
+            <p class="food-card__desc">Sauted mushrooms, melted Swiss cheese, and rich truffle aioli on a toasted bun..</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹299</span>
+              <span class="food-card__rating">★★★★★ <em>4.8</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://andreabuckett.com/wp-content/uploads/2024/05/Roasted-Red-Pepper-and-Turkey-Burger-Andrea-Buckett.webp" alt="Crispy Chicken Burger" class="food-card__img" />
+            <span class="food-card__badge food-card__badge--new">New</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Roasted Red Pepper</h4>
+            <p class="food-card__desc">Tender fire-roasted red pepper strips, melted cheese, fresh greens, 
+              and a creamy garlic or pest-infused sauce on a toasted bun.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹199</span>
+              <span class="food-card__rating">★★★★☆ <em>4.7</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid burgers -->
+
+      <!-- ── PASTA ── -->
+      <h3 class="menu-category-title">Pasta</h3>
+      <div class="menu-grid">
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Cacio e Pepe" class="food-card__img" />
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Red Sauce</h4>
+            <p class="food-card__desc">Tomatoes, garlic, olive oil, onions, and herbs like basil or oregano, often finished with cheese.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹199</span>
+              <span class="food-card__rating">★★★★★ <em>5.0</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&q=80" alt="Arrabbiata Pasta" class="food-card__img" />
+            <span class="food-card__badge food-card__badge--spicy">🌶 Spicy</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Arrabbiata Penne</h4>
+            <p class="food-card__desc">Slow-simmered tomato-chilli sauce, garlic, basil oil, parmesan shavings.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹249</span>
+              <span class="food-card__rating">★★★★☆ <em>4.6</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://www.sharmispassions.com/wp-content/uploads/2020/03/WhiteSaucePasta6.jpg" alt="Creamy Alfredo Pasta" class="food-card__img" />
+            <span class="food-card__badge">Best Seller</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">White Sauce</h4>
+            <p class="food-card__desc">Velvety sauce of butter, flour, and milk, typically seasoned with garlic,
+               herbs, and cheese, and often tossed with crisp vegetables</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">199</span>
+              <span class="food-card__rating">★★★★★ <em>4.8</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid pasta -->
+
+      <!-- ── DESSERTS ── -->
+      <h3 class="menu-category-title">🍮 Desserts</h3>
+      <div class="menu-grid">
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80" alt="Chocolate lava cake" class="food-card__img" />
+            <span class="food-card__badge">Signature</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Molten Lava Cake</h4>
+            <p class="food-card__desc">Dark chocolate centre, vanilla bean ice cream, salted caramel drizzle.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹299</span>
+              <span class="food-card__rating">★★★★★ <em>4.9</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=400&q=80" alt="Tiramisu" class="food-card__img" />
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Classic Tiramisu</h4>
+            <p class="food-card__desc">Mascarpone cream, espresso-soaked ladyfingers, dark cocoa dusting.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹279</span>
+              <span class="food-card__rating">★★★★☆ <em>4.7</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" alt="Gulab Jamun cheesecake" class="food-card__img" />
+            <span class="food-card__badge food-card__badge--new">Best seller</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Gulab Jamun Cheesecake</h4>
+            <p class="food-card__desc">Rose-cardamom cheesecake base, gulab jamun topping, pistachio crumble.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹329</span>
+              <span class="food-card__rating">★★★★★ <em>5.0</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid desserts -->
+
+      <!-- ── DRINKS ── -->
+      <h3 class="menu-category-title"> Drinks</h3>
+      <div class="menu-grid">
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Mango Lassi" class="food-card__img" />
+            <span class="food-card__badge">Fan Favourite</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Mango Saffron Lassi</h4>
+            <p class="food-card__desc">Alphonso mango pure, saffron-infused yoghurt, cardamom, rose water.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹179</span>
+              <span class="food-card__rating">★★★★★ <em>4.9</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&q=80" alt="Cold Brew Coffee" class="food-card__img" />
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Urban Cold Brew</h4>
+            <p class="food-card__desc">18-hour cold-steeped single-origin coffee, coconut cream, brown sugar syrup.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹199</span>
+              <span class="food-card__rating">★★★★☆ <em>4.7</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80" alt="Virgin Mojito" class="food-card__img" />
+            <span class="food-card__badge food-card__badge--new">New</span>
+          </div>
+          <div class="food-card__body">
+            <h4 class="food-card__name">Spiced Virgin Mojito</h4>
+            <p class="food-card__desc">Muddled mint, lime, chaat masala, soda water, cucumber ribbons.</p>
+            <div class="food-card__footer">
+              <span class="food-card__price">₹159</span>
+              <span class="food-card__rating">★★★★★ <em>4.8</em></span>
+            </div>
+            <a href="#contact" class="btn btn-card">Add to Order</a>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid drinks -->
+
+    </div><!-- /container -->
+  </section>
+
+
+  <!-- ============================
+       SECTION 6: CUSTOMER REVIEWS
+  ============================== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <p class="section-eyebrow">What People Say</p>
+      <h2 class="section-title">Loved by Every Table</h2>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Margherita Classic transported me straight to Naples. Thin, blistered crust and the freshest tomatoes — absolutely outstanding. We've already booked again for next Friday!"</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=47" alt="Priya Kapoor" class="review-avatar" />
+            <div>
+              <strong>Priya Kapoor</strong>
+              <span>Food Blogger · Delhi</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card review-card--highlight">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Hands down the best smash burger I've had outside the US. The ember sauce is a revelation. I come here every week and my colleagues are starting to join me — this place is addictive."</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=12" alt="Arjun Nair" class="review-avatar" />
+            <div>
+              <strong>Arjun Nair</strong>
+              <span>Software Engineer · Gurgaon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Gulab Jamun Cheesecake is a crime of deliciousness. Chef Anika has perfectly bridged Italian technique with Indian soul. A must-try for anyone who loves creative desserts."</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=29" alt="Sneha Joshi" class="review-avatar" />
+            <div>
+              <strong>Sneha Joshi</strong>
+              <span>Pastry Enthusiast · Noida</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ambience is warm, staff is genuinely attentive, and the Roasted Red Pepper what I ate in Rome last year. A serious restaurant in a relaxed setting — perfect for dates and family alike."</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=68" alt="Rahul Verma" class="review-avatar" />
+            <div>
+              <strong>Rahul Verma</strong>
+              <span>Architect · South Delhi</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Classic smash Burger + Mango Saffron Lassi = the combo of the year. Spice level was just right. Will definitely try the Truffle Mushroom Swiss next visit!"</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=5" alt="Meera Singh" class="review-avatar" />
+            <div>
+              <strong>Meera Singh</strong>
+              <span>Marketing Manager · Dwarka</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered the Molten Lava Cake at the end and it arrived at exactly the right temperature. The cold brew is rich and smooth. Every visit feels like the first time — that's rare and precious."</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/56?img=44" alt="Vikram Das" class="review-avatar" />
+            <div>
+              <strong>Vikram Das</strong>
+              <span>Entrepreneur · Connaught Place</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /reviews-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 7: CONTACT
+  ============================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow">Find Us</p>
+      <h2 class="section-title">Visit Urban Bites</h2>
+
+      <div class="contact-grid">
+
+        <!-- Address -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-location-dot"></i></div>
+          <h4>Our Address</h4>
+          <p>42, Khan Market Lane<br />New Delhi – 110 003<br />India</p>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-phone"></i></div>
+          <h4>Phone</h4>
+          <p>+91 98765 43210<br />+91 11 2345 6789</p>
+          <a href="tel:+919876543210" class="contact-link">Call Now</a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>hello@bitesurban.in<br />orders@eurbanbites.in</p>
+          <a href="mailto:hello@emberandspice.in" class="contact-link">Send Email</a>
+        </div>
+
+        <!-- Hours -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-clock"></i></div>
+          <h4>Opening Hours</h4>
+          <table class="hours-table">
+            <tr><td>Mon – Fri</td><td>11:00 AM – 11:00 PM</td></tr>
+            <tr><td>Saturday</td><td>10:00 AM – 10:00 AM</td></tr>
+            <tr><td>Sunday</td><td>10:00 AM – 9:00 PM</td></tr>
+          </table>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 8: FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-col footer-col--brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <span class="logo-icon">🔥</span>
+            <span class="logo-text">Ember <em>&amp;</em> Spice</span>
+          </a>
+          <p class="footer-tagline">Bold flavours. Open fire.<br />Unforgettable memories.</p>
+          <!-- Social icons -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="footer-col">
+          <h5 class="footer-heading">Menu</h5>
+          <ul class="footer-links">
+            <li><a href="#menu">Pizza</a></li>
+            <li><a href="#menu">Burgers</a></li>
+            <li><a href="#menu">Pasta</a></li>
+            <li><a href="#menu">Desserts</a></li>
+            <li><a href="#menu">Drinks</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <h5 class="footer-heading">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ember &amp; Spice. All rights reserved. Made with 🔥 in Delhi.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
