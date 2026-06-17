@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sparsh Ranjan — Frontend Developer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">SR<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+        <li><a href="resume.pdf" download class="nav-cta">Resume</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-mesh"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Sparsh<br/><span class="name-accent">Ranjan</span></h1>
+        <p class="hero-title">Frontend Developer &nbsp;|&nbsp; UI Enthusiast</p>
+        <p class="hero-tagline"> ✦ 𝗗𝗲𝘀𝗶𝗴𝗻𝗶𝗻𝗴 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗮𝘁 𝗯𝗹𝗲𝗻𝗱 𝗰𝗿𝗲𝗮𝘁𝗶𝘃𝗶𝘁𝘆, 𝗰𝗹𝗮𝗿𝗶𝘁𝘆, 𝗮𝗻𝗱 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact"  class="btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="img-ring">
+          <img src="photo.jpeg" alt="Sparsh Ranjan" class="hero-photo" onerror="this.src='https://ui-avatars.com/api/?name=Sparsh+Ranjan&background=6C8EFF&color=fff&size=300'"/>
+        </div>
+        <div class="img-glow"></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a passionate Frontend Developer with a strong eye for design and a drive to build
+            web experiences that are both beautiful and functional. I enjoy translating ideas into
+            real, interactive interfaces that people love to use.
+          </p>
+          <p>
+            Currently deepening my expertise in modern JavaScript and UI design patterns while
+            actively seeking opportunities to collaborate on meaningful projects. My background in
+            C and Python gives me a solid programming foundation that complements my web skills.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new design trends, contributing to open-source projects,
+            or sharpening my problem-solving skills through algorithmic challenges.
+          </p>
+          <div class="about-goals">
+            <div class="goal-chip">🎯 Seeking Full-Time Roles</div>
+            <div class="goal-chip">💼 Open to Freelancing</div>
+            <div class="goal-chip">📚 Continuous Learner</div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <span class="card-icon">⚡</span>
+            <h4>Frontend Focus</h4>
+            <p>Building responsive, accessible UIs with modern HTML, CSS & JavaScript.</p>
+          </div>
+          <div class="info-card">
+            <span class="card-icon">🔗</span>
+            <h4>API Integration</h4>
+            <p>Comfortable fetching, handling, and displaying live data from REST APIs.</p>
+          </div>
+          <div class="info-card">
+            <span class="card-icon">🛠️</span>
+            <h4>Dev Workflow</h4>
+            <p>Version control with Git & GitHub — clean commits, clear history.</p>
+          </div>
+          <div class="info-card">
+            <span class="card-icon">🐍</span>
+            <h4>Python & C</h4>
+            <p>Strong logical foundation through scripting, algorithms, and system-level programming.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-items">
+            <div class="skill-bar-wrap">
+              <div class="skill-meta"><span>HTML5</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-meta"><span>CSS3</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-meta"><span>JavaScript</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-meta"><span>Python</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-meta"><span>C Language</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools & Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Git</span>
+            <span class="skill-tag tag-primary">GitHub</span>
+            <span class="skill-tag tag-secondary">REST APIs</span>
+            <span class="skill-tag tag-secondary">API Integration</span>
+            <span class="skill-tag tag-tertiary">Responsive Design</span>
+            <span class="skill-tag tag-tertiary">UI / UX Basics</span>
+            <span class="skill-tag tag-primary">VS Code</span>
+            <span class="skill-tag tag-primary">Command Line</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-index="01">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-badge">Web App</div>
+          </div>
+          <h3 class="project-name">Urban Bites</h3>
+          <p class="project-sub">Fine Casual Dining</p>
+          <p class="project-desc">
+            A polished restaurant website featuring an elegant menu layout, ambiance gallery,
+            reservation flow, and fully responsive design. Built with HTML, CSS 
+            with smooth scroll animations and a premium dining aesthetic.
+          </p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="./CodeSoft_L1_T2/index.html" target="_blank" rel="noopener" class="btn-demo">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="02">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-badge">Utility App</div>
+          </div>
+          <h3 class="project-name">Calculator</h3>
+          <p class="project-sub">Modern Web Calculator</p>
+          <p class="project-desc">
+            A sleek, fully functional calculator with keyboard support, chained-operations handling,
+            and error-safe division logic. Designed with a clean dark UI, smooth button transitions,
+            and a responsive layout that works on all screen sizes.
+          </p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="./CodeSoft_L1_T3/calculator.html" target="_blank" rel="noopener" class="btn-demo">Live Demo →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RESUME ═══════════════ -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="resume-banner">
+        <div class="resume-text">
+          <h2>Want to know more?</h2>
+          <p>Download my resume for a full overview of my education, experience, and skills.</p>
+        </div>
+        <a href="Sparsh_Ranjan_Resume.pdf" download class="btn-resume">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">Let's Talk</div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-sub">
+        I'm currently open to new opportunities — whether it's a full-time role, a freelance gig,
+        or just a chat about tech. My inbox is always open.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:sparsh@example.com" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">sparsh.ranjancse25@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://github.com/sparshxranjan99" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/sparshxranjan99</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">linkedin.com/in/sparshranjan</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="portfolio.js"></script>
+</body>
+</html>
